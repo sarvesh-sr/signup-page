@@ -6,6 +6,29 @@
     <title>Register</title>
   </head>
   <body>
-    Register page
+    <h1>Create an Account</h1>
+    <form id="register-form">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <br />
+      <div>
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required />
+      </div>
+      <br />
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>
