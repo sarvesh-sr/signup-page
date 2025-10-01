@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "sql303.infinityfree.com";
 $username = "if0_40064303";
 $password = "xjJaDGsSQXb";
-$dbname = "web_app";
+$dbname = "if0_40064303_web_app";
 
 header('Content-Type: application/json');
 
