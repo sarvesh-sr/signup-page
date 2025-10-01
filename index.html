@@ -3,9 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Welcome - Signup Page Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    Default home page
+    <div
+      class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light"
+    >
+      <div class="text-center">
+        <div class="mb-5">
+          <h1 class="display-4 fw-bold text-primary mb-3">Signup Page Demo</h1>
+          <p class="lead text-muted">
+            Create an account or login to get started.
+          </p>
+        </div>
+
+        <div class="d-grid gap-3 col-md-6 mx-auto">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            onclick="redirectToRegister()"
+          >
+            <i class="bi bi-person-plus"></i> Create Account
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-primary btn-lg"
+            onclick="redirectToLogin()"
+          >
+            <i class="bi bi-box-arrow-in-right"></i> Login
+          </button>
+        </div>
+
+        <div class="mt-4">
+          <small class="text-muted">
+            New here? Create an account to get started. Already have an account?
+            Login to continue.
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function redirectToRegister() {
+        window.location.href = "./register.html";
+      }
+
+      function redirectToLogin() {
+        window.location.href = "./login.html";
+      }
+    </script>
   </body>
 </html>
